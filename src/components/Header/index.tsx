@@ -15,16 +15,16 @@ const Header: React.FC = () => {
       <img src={LogoImg} alt="MySite" style={{ width: 200 }}/>
 
       <nav className="pages">
-        <a href="#">Documentation</a>
-        <a href="#">Solutions</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/solutions">Solutions</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/contract">Contact</a>
       </nav>
 
       <nav className="sign">
-        <a href="#">Log In</a>
+        <a href="/login">Log In</a>
         <div className="signup">
-          <a href="#">Sign Up</a>
+          <a href="/signup">Sign Up</a>
         </div>
       </nav>
     </Container>
