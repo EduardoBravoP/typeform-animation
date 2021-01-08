@@ -2,6 +2,9 @@ import React from 'react';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 
 import { Sticky } from '../../styles';
+import { Title } from './styles';
+
+import DashboardImg from '../../assets/images/Dashboard.png';
 
 const FirstAndSecond: React.FC = () => {
   const { scrollYProgress } = useViewportScroll();
@@ -23,7 +26,8 @@ const FirstAndSecond: React.FC = () => {
         border: '4px solid #fff',
         opacity: frameOpacity,
         scale: frameScale,
-        }} />
+        }}
+      />
     </Sticky>
   )
 }
@@ -72,14 +76,19 @@ const First: React.FC = () => {
     >
       <motion.div className="offset" style={{ y: offsetY }}>
         <div className="a">
+          <Title>Lorem ipsum dolor sit amet consectetur</Title>
           <motion.div className="left-side" style={{ height: leftSideHeight }}/>
           
           <div className="right-side">
-            <motion.div
+            <motion.img
               className="right-image"
+              src={DashboardImg}
+              alt="code"
               style={{
                 y: rightSideY,
                 scale: rightSideScale,
+                width: 750,
+                marginLeft: -30
               }}
             />
           </div>
